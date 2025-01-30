@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "celery>=5.4.0",
     "django>=5.1.4",
     "pip>=24.3.1",
     "pyswisseph>=2.10.3.2",
+    "redis>=5.2.1",
     "ruff>=0.8.3",
 ]
