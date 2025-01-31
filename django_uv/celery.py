@@ -22,9 +22,8 @@ app.conf.task_queues = {
 
 app.conf.task_default_queue = "long_tasks"
 
-app.conf.beat_schedule = {
-    
-}
+# timezone
+app.conf.timezone = "UTC"
 
 # Auto-discover tasks from all installed apps 
 app.autodiscover_tasks()

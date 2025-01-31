@@ -28,4 +28,4 @@ process_large_data.delay()
 # print(result.info)
 
 
-test_appConfig.delay('test6')
+test_appConfig.delay('test1')

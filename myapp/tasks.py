@@ -1,5 +1,6 @@
 from celery import shared_task 
 from django.contrib.auth import get_user_model
+from django_uv.celery import app
 # settings 
 from django_uv.settings import LANGUAGE_CODE
 
@@ -31,7 +32,7 @@ def process_large_data():
     print("Long-running task completed!!!")
     return "Long-running task completed!"
 
-@shared_task(queue="short_tasks")
+@app.task(queue="short_tasks")
 def test_appConfig(name):
     from myapp.models import MyappConfig
     group,create = MyappConfig.objects.get_or_create(name='test')
