@@ -1,6 +1,12 @@
 # add package
     - uv add [package]
 
+# https://dev.to/tylerlwsmith/defining-tasks-brokers-workers-and-backends-in-celery-1982
+# https://derlin.github.io/introduction-to-fastapi-and-celery/03-celery/
+
+# Note
+    - Don't forget to restart the worker, as the method definition changed! 
+
 # default command
     - celery -A django_uv worker --loglevel=info
     ✅ Easier to manage

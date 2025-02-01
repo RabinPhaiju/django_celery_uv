@@ -1,4 +1,4 @@
-from celery import Celery 
+from celery import Celery,Task
 import os
 
 from django_uv.settings import CELERY_BROKER_URL,CELERY_RESULT_BACKEND
@@ -27,4 +27,3 @@ app.conf.timezone = "UTC"
 
 # Auto-discover tasks from all installed apps 
 app.autodiscover_tasks()
-
